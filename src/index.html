@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>page title</h1>
-    <ul>
-        <li><a href="#home">home</a></li>
-        <li><a href="#instuctions">instructions</a></li>
-        <li><a href="#rules">rules</a></li>
-    </ul>
-    <p>ask a question about movie...</p>
-    <input type="text" id="user_input">
-    <button type="button" id="submit_btn" onclick="give_feedback()">Submit</button>
-    <p id="result"></p>
+    <section class="main_container">
+        <h1>SQL Agent Team404</h1>
+        <nav>
+            <a href=""><span class="home">Home</span></a>
+            <a href=""><span class="instuctions">Instuctions</span></a>
+            <a href=""><span class="rules">Rules</span></a>
+        </nav>
+        <p>ask a question about movie...</p>
+        <input type="text" class="user_input">
+        <button type="button" id="submit_btn" onclick="give_feedback()">Submit</button>
+        <p id="result"></p>
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
