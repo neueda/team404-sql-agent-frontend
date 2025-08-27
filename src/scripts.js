@@ -13,7 +13,7 @@ function give_feedback() {
 }
 
 async function send_request(user_input) {  
-  const url = `http://localhost:8080/api/hello?name=${userInput}`; //change to actual URL when we have GC access
+  const url = `http://localhost:8080/api/hello?name=${user_input}`; //change to actual URL when we have GC access
   try {
     const response = await fetch(url);
     if (!response.ok) {
