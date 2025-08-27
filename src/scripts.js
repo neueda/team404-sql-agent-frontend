@@ -1,20 +1,19 @@
 function give_feedback() {
     //print the user's query back to the page for verification
-    //can call the http request from another function in here later etc
-    send_request()
     const userInput = document.getElementById("user_input").value;
     //console.log(userInput)
     const feedback_element = document.getElementById("feedback_element");
     if (userInput) {
-        feedback_element.innerText = userInput;
+      send_request(userInput)
+      feedback_element.innerText = userInput;
     }
     else {
-        feedback_element.innerText = "No query entered"
+      feedback_element.innerText = "No query entered"
     }
 }
 
-async function send_request() {  
-  const url = "http://localhost:8080/api/hello"; //change to actual URL when we have GC access
+async function send_request(user_input) {  
+  const url = `http://localhost:8080/api/hello?name=${userInput}`; //change to actual URL when we have GC access
   try {
     const response = await fetch(url);
     if (!response.ok) {
