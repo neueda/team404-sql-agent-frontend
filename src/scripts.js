@@ -14,15 +14,15 @@ function give_feedback() {
 }
 
 async function send_request() {  
-  const url = "http://localhost:8080/"; //change to actual URL when we have GC access
+  const url = "http://localhost:8080/api/hello"; //change to actual URL when we have GC access
   try {
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
 
-    const results = await response.json();
-    console.log(results); //for testing and troubleshooting purposes
+    //const results = await response.json();
+    console.log(response.text()); //for testing and troubleshooting purposes
 
   } catch (error) {
     console.error(error.message);
