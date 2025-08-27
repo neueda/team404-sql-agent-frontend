@@ -61,7 +61,11 @@ button:hover {
     background-color: #444;
 }
 
-#result {
+#feedback_element {
     margin-top: 15px;
     font-weight: bold;
+}
+
+#results {
+    
 }
