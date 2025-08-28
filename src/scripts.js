@@ -20,8 +20,8 @@ async function send_request(user_input) {
       throw new Error(`Response status: ${response.status}`);
     }
 
-    //const results = await response.json();
-    console.log(response.text()); //for testing and troubleshooting purposes
+    const results = await response.json();
+    console.log(results); //for testing and troubleshooting purposes
 
   } catch (error) {
     console.error(error.message);
