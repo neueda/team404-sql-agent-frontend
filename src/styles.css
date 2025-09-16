@@ -6,6 +6,11 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-image:url('../images/pop.jpg');
+    background-size: cover;
+    background-position: center 40%;
+    /* background-color:whitesmoke; */
+  
 }
 
 h1 {
@@ -56,6 +61,7 @@ nav a:hover {
     height: 300px;
     border-radius: 8px;
     margin: 0 auto;
+    
 }
 
 table {
@@ -111,5 +117,14 @@ button:hover {
     margin: 15px;
     font-weight: bold;
 }
-
-
+.footer {
+   background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0; 
+    font-size: 15px;  
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;  
+}
