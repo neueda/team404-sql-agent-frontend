@@ -2,15 +2,13 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: #1A1F40;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image:url('../images/pop.jpg');
+    background-image:url('images/background_images/curtains.jpg');
+    /* background-image:url('images/background_images/popcorn.jpg'); */
     background-size: cover;
     background-position: center 40%;
-    /* background-color:whitesmoke; */
-  
 }
 
 h1 {
@@ -18,14 +16,14 @@ h1 {
     justify-content: center;
     flex-direction: column;
     align-items: center; 
-    color: #93739C;
+    color: #e7cccc;
     font-size: 3.5em;
     margin: 0px;
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-color: #030206;
+    background-color: #161414;
 }
 
 nav {
@@ -36,11 +34,11 @@ nav {
     gap: 10px;
     padding-bottom: 15px;
     margin-bottom: 50px;
-    background-color: #030206;
+    background-color: #161414;
 }
 
 nav a {
-    color: #93739C;
+    color: #e7cccc;
     text-decoration: none;
     padding: 5px 10px;
     font-size: 1.1em;
@@ -56,9 +54,10 @@ nav a:hover {
     justify-content: center;
     align-items: center; */
     padding: 30px;
-    background-color: #ECAEFE;
+    background-color: #4f4e50;
+    opacity: 0.75;
     max-width: 600px;
-    height: 300px;
+    height: 500px;
     border-radius: 8px;
     margin: 0 auto;
     
@@ -67,7 +66,7 @@ nav a:hover {
 table {
     grid-row: 2;
     grid-column: 1 / span 2;
-    background-color: #FAE6FF;
+    background-color: #000000;
     margin: 15px;
     border-radius: 8px;
 }
@@ -79,17 +78,17 @@ table {
     margin:5px;
     max-width: 400px;
     height: 6em;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 4px;
-    background-color: #FAF6FB;
+    background-color: #000000;
 }
 ::placeholder {
-  color: #93739C;
+  color: #ffffff;
   opacity: 1; /* Firefox */
 }
 
 ::-ms-input-placeholder { /* Edge 12 -18 */
-  color: #93739C;
+  color: #ffffff;
 }
 
 button {
@@ -99,7 +98,7 @@ button {
     padding: 0px;
     margin: 15px;
     background-color: #030206;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -118,8 +117,8 @@ button:hover {
     font-weight: bold;
 }
 .footer {
-   background-color: #333;
-    color: white;
+   background-color: #161414;
+    color: #e7cccc;
     text-align: center;
     padding: 15px 0; 
     font-size: 15px;  
