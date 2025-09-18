@@ -2,13 +2,13 @@ function give_feedback() {
   //print the user's query back to the page for verification
   const userInput = document.getElementById("user_input").value;
   //console.log(userInput)
-  const feedback_element = document.getElementById("feedback_element");
+  const feedback_text = document.getElementById("feedback_text");
   if (userInput) {
     send_request(userInput)
-    feedback_element.innerText = userInput;
+    feedback_text.innerText = userInput;
   }
   else {
-    feedback_element.innerText = "No query entered"
+    feedback_text.innerText = "No query entered"
   }
 }
 
