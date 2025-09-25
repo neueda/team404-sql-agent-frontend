@@ -57,9 +57,7 @@ function use_response(result_json) {
   for(row in result_json) {
     bodyHTML += "<tr>";
     for (col in result_json[row]){
-      bodyHTML += "<td>";
-      bodyHTML += `${result_json[row][col]}`;
-      bodyHTML +=  "<td>";
+      bodyHTML += `<td>${result_json[row][col]}</td>`;
     }
     bodyHTML += "</tr>";
   }
