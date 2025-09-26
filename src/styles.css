@@ -142,6 +142,37 @@ table {
     color: #ffffff;
 }
 
+/* container for instructions */
+.istn_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #c93f3f;
+    min-width: 800px;
+    max-width: 500px;
+    height: fit-content;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+/* container for instructions */
+.rule_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #c93f3f;
+    min-width: 800px;
+    max-width: 500px;
+    height: fit-content;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
 
 /* footer */
 .footer {
