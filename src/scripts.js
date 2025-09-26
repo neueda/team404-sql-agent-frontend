@@ -21,7 +21,7 @@ function give_feedback() {
 }
 
 async function send_request(user_input) {
-  const url = `http://localhost:8080/api/hello?query=${user_input}`;
+  const url = `https://team404-sql-agent-971987703066.europe-north1.run.app/api/hello?query=${user_input}`;
   try {
     const response = await fetch(url);
     if (!response.ok) {
