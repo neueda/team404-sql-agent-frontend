@@ -41,26 +41,27 @@ function use_response(result_json) {
   //Populates the HTML Table element with JSON object.
   const headerRow = document.getElementById("Hresults");
   const tableBody = document.getElementById("results");
-  const headers = ["Film", "Genre", "Lead Studio", "Audience Score", "Profitability", "Rotten Tomatoes Score", "Worldwide Gross Revenue", "Year"];
+  const headersLoop = ["Film", "Genre", "Lead_Studio", "Audience_Score_pc", "Profitability", "Rotten_Tomatoes_pc", "Worldwide_Gross","Year"];
+  const headersView = ["Film Name", "Genre", "Lead Studio", "Audience Score", "Profitability", "Rotten Tomatoes", "Worldwide Gross Revenue","Year"];
   //var table = document.getElementById("table");
 
 
   var headhtml = "<tr>";
-  for (h in headers){
-    headhtml += `<th>${headers[h]}</th>`
+  for (h in headersView){
+    headhtml += `<th>${headersView[h]}</th>`
   }
   headhtml += "</tr>";
   headerRow.innerHTML = headhtml
 
   // Loop through all keys in the result_json object
   var bodyHTML = "";
-  for(row in result_json) {
-    bodyHTML += "<tr>";
-    for (col in result_json[row]){
-      bodyHTML += `<td>${result_json[row][col]}</td>`;
-    }
-    bodyHTML += "</tr>";
+for (let row of result_json) {
+  bodyHTML += "<tr>";
+  for (let h of headersLoop) {
+    bodyHTML += `<td>${row[h]}</td>`;
   }
+  bodyHTML += "</tr>";
+}
   tableBody.innerHTML = bodyHTML;
 
 }
