@@ -1,19 +1,14 @@
-// listens for enter when user submits input
-document.querySelector('#user_input').addEventListener('keydown', function (e){
-  if (e.key === 'Enter') {
-    give_feedback()
-  }
-})
 
 
-function give_feedback() {
+
+function give_feedback(agentResponse) {
   //print the user's query back to the page for verification
   const userInput = document.getElementById("user_input").value;
   //console.log(userInput)
   const feedback_text = document.getElementById("feedback_text");
   if (userInput) {
     send_request(userInput)
-    feedback_text.innerText = userInput;
+    
   }
   else {
     feedback_text.innerText = "No query entered"
@@ -21,21 +16,33 @@ function give_feedback() {
 }
 
 async function send_request(user_input) {
-  const url = `https://team404-sql-agent-971987703066.europe-north1.run.app/api/hello?query=${user_input}`;
+  const url = `http://localhost:8080/api/hello?query=${user_input}`;
   try {
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
 
-    const results = await response.json();
+    const data = await response.json();
 
-    use_response(results);
+    const films = data.JsonResultSet
+    const agentResponse = data.AgentResponse;
+    const feedback_text = document.getElementById("feedback_text");
+    feedback_text.innerHTML = agentResponse
+
+    use_response(films);
 
   } catch (error) {
     console.error(error.message);
   }
 }
+
+// listens for enter when user submits input
+document.querySelector('#user_input').addEventListener('keydown', function (e){
+  if (e.key === 'Enter') {
+    give_feedback()
+  }
+})
 
 function use_response(result_json) {
   //Populates the HTML Table element with JSON object.
