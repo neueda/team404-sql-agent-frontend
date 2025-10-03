@@ -13,8 +13,8 @@ function give_feedback(agentResponse) {
 
 async function send_request(user_input) {
   //sends a http request to our backend and awaits a response
-  //const url = `http://localhost:8080/api/hello?query=${user_input}`;
-  const url = `https://team404-sql-agent-971987703066.europe-north1.run.app/api/hello?query=${user_input}`;
+  const url = `http://localhost:8080/api/hello?query=${user_input}`;
+  //const url = `https://team404-sql-agent-971987703066.europe-north1.run.app/api/hello?query=${user_input}`;
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -22,7 +22,7 @@ async function send_request(user_input) {
     }
 
     const data = await response.json();
-    const films = data.JsonResultSet
+    const films = data.JsonResultSet;
     const agentResponse = data.AgentResponse;
     const feedback_text = document.getElementById("feedback_text");
     feedback_text.innerHTML = agentResponse
@@ -66,4 +66,16 @@ for (let row of result_json) {
 }
   tableBody.innerHTML = bodyHTML;
 
+}
+
+function clearBtn() {
+    // Clear the input field
+    document.getElementById("user_input").value = "";
+
+    // Clear feedback text
+    document.getElementById("feedback_text").textContent = "";
+
+    // Clear table headers and rows
+    document.getElementById("Hresults").innerHTML = "";
+    document.getElementById("results").innerHTML = "";
 }
