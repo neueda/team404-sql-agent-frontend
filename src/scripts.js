@@ -13,6 +13,7 @@ function give_feedback(agentResponse) {
 
 async function send_request(user_input) {
   //sends a http request to our backend and awaits a response
+  //const url = `http://localhost:8080/api/hello?query=${user_input}`;
   const url = `https://team404-sql-agent-971987703066.europe-north1.run.app/api/hello?query=${user_input}`;
   try {
     const response = await fetch(url);
