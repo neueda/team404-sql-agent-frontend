@@ -19,13 +19,13 @@ h1 {
     justify-content: center;
     flex-direction: column;
     align-items: center; 
-    color: #444341;
+    color: #ffffff;
     font-size: 3.5em;
     margin: 0px;
     font-family: "Yomogi", cursive;
     font-weight: 400;
     font-style: normal;
-    background-color: #ffdca8;
+    background-color: #c93f3f;
 }
 
 /* navigation */
@@ -37,11 +37,11 @@ nav {
     gap: 10px;
     padding-bottom: 15px;
     margin-bottom: 50px;
-    background-color: #ffdca8;
+    background-color: #c93f3f;
 }
 
 nav a {
-    color: #444341;
+    color: #ffe6e6;
     text-decoration: none;
     padding: 5px 10px;
     font-size: 1.1em;
@@ -50,18 +50,17 @@ nav a {
 nav a:hover {
     border: none;
     border-radius: 4px;
-    background-color: #ffc266;
+    background-color: #b40202;
 }
 
 /* container of user input, button, SQl display, table */
 .main_container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     padding: 30px;
-    background-color: #c93f3f;
-    /* opacity: 0.75; */
+    background-color: #ffd597;
     min-width: 800px;
     max-width: fit-content;
     height: fit-content;
@@ -71,9 +70,15 @@ nav a:hover {
 }
 
 /* user input and button */
+input {
+    background-color: #fae4c3;
+}
+
 .input {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #user_input {
@@ -83,9 +88,8 @@ nav a:hover {
     min-width: 680px;
     max-width: 680px;
     height: 35px;
-    border: 1px solid #c93f3f;
+    border: 1px solid #ffd597;
     border-radius: 4px;
-    background-color: #ffffff;
     color: #444341;
     font-size: 18px;
 }
@@ -97,48 +101,58 @@ nav a:hover {
   color: #444341;
 }
 
+/* submit button */
 button {
     order: 2;
-    padding: 0px;
+    padding: 2px;
     margin-left: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color: #b82020;
-    color: #ffffff;
+    background-color: #fae4c3;
+    color: #000000;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 4em;
-    height: 3em;
+    width: 70px;
+    height: 50px;
     font-size: 18px;
 }
 
 button:hover {
-    background-color: #b40202;
+    background-color: #ffb951;
 }
-
 
 /* table */
 table {
     order: 4;
-    background-color: #b82020;
+    background-color: #fae4c3;
     margin: 15px;
     border-radius: 4px;
-    color: #ffffff;
+    color: #000000;
 }
 
 /* SQL display */
+.feedback {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 #feedback_element {
     order: 3;
     margin: 15px;
     font-weight: bold;
-    background-color: #b82020;
+    background-color: #fae4c3;
     border-radius: 4px;
-    height: 50px;
+    height: fit-content;
+    max-width: 700px;
+    min-width: 750px;
+    padding: 20px;
 }
 
 #feedback_text{
-    color: #ffffff;
+    color: #000000;
 }
 
 /* container for instructions */
@@ -148,7 +162,7 @@ table {
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-color: #c93f3f;
+    background-color: #ffd597;
     min-width: 800px;
     max-width: 500px;
     height: fit-content;
@@ -164,7 +178,7 @@ table {
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-color: #c93f3f;
+    background-color: #ffd597;
     min-width: 800px;
     max-width: 500px;
     height: fit-content;
@@ -175,8 +189,8 @@ table {
 
 /* footer */
 .footer {
-    background-color: #ffdca8;
-    color: #444341;
+    background-color: #c93f3f;
+    color: #ffffff;
     text-align: center;
     padding: 15px 0; 
     font-size: 15px;  
