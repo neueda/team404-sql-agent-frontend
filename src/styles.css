@@ -112,6 +112,13 @@ button {
     height: 3em;
     font-size: 18px;
 }
+#clear-btn{
+    background-color: rgb(234, 151, 123);
+}
+#clear-btn:hover{
+    background-color: rgb(231, 137, 106);
+
+}
 
 button:hover {
     background-color: #b40202;
