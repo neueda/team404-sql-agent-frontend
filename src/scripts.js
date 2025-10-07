@@ -29,10 +29,22 @@ async function send_request(user_input) {
     const data = await response.json();
     const films = data.JsonResultSet;
     const agentResponse = data.AgentResponse;
+    //display agent response every time
     const feedback_text = document.getElementById("feedback_text");
     feedback_text.innerHTML = agentResponse;
     if (films && films.length > 0) {
       use_response(films);
+    }
+    else if (films){
+      //Valid request but no data found
+      document.getElementById("Hresults").innerHTML = "";
+      document.getElementById("results").textContent="No Data Found"
+
+    }
+    else{
+      //Invalid request and not allowed 
+      document.getElementById("Hresults").innerHTML = "";
+      document.getElementById("results").textContent="Invalid request"
     }
   } catch (error) {
     console.error(error.message);
