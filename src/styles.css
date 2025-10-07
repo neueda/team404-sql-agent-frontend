@@ -39,14 +39,12 @@ nav {
     margin-bottom: 50px;
     background-color: #c93f3f;
 }
-
 nav a {
     color: #ffe6e6;
     text-decoration: none;
     padding: 5px 10px;
     font-size: 1.1em;
 }
-
 nav a:hover {
     border: none;
     border-radius: 4px;
@@ -73,14 +71,12 @@ nav a:hover {
 input {
     background-color: #fae4c3;
 }
-
 .input {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
 #user_input {
     order: 1;
     padding: 8px 12px;
@@ -122,9 +118,7 @@ button {
 }
 #clear-btn:hover{
     background-color: rgb(231, 137, 106);
-
 }
-
 button:hover {
     background-color: #ffb951;
 }
@@ -135,6 +129,7 @@ table {
     background-color: #fae4c3;
     margin: 15px;
     border-radius: 4px;
+    border-style: solid;
     color: #000000;
 }
 
@@ -145,7 +140,6 @@ table {
     justify-content: center;
     align-items: center;
 }
-
 #feedback_element {
     order: 3;
     margin: 15px;
@@ -157,7 +151,6 @@ table {
     min-width: 750px;
     padding: 20px;
 }
-
 #feedback_text{
     color: #000000;
 }
@@ -177,13 +170,19 @@ table {
     margin: 0 auto;
     margin-bottom: 100px;
 }
+.rules {
+    text-align: left;
+}
+.p {
+    margin: 5px;
+}
 
 /* container for instructions */
 .rule_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     padding: 30px;
     background-color: #ffd597;
     min-width: 800px;
@@ -193,8 +192,22 @@ table {
     margin: 0 auto;
     margin-bottom: 100px;
 }
+.instructions {
+    text-align: left;
+    background-color: #fae4c3;
+    border-radius: 8px;
+}
+.p {
+    margin: 5px;
+}
 
 /* footer */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .footer {
     background-color: #c93f3f;
     color: #ffffff;
