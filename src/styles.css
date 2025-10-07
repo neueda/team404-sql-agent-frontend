@@ -195,6 +195,12 @@ table {
 }
 
 /* footer */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .footer {
     background-color: #c93f3f;
     color: #ffffff;
