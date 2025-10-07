@@ -31,7 +31,7 @@ async function send_request(user_input) {
     const agentResponse = data.AgentResponse;
     const feedback_text = document.getElementById("feedback_text");
     feedback_text.innerHTML = agentResponse;
-    if (films || films.length > 0) {
+    if (films && films.length > 0) {
       use_response(films);
     }
   } catch (error) {
