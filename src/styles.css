@@ -131,6 +131,11 @@ table {
     border-radius: 4px;
     color: #000000;
 }
+thead {
+    background-color: #ffb951;
+    color: black;
+    font-weight: bold;
+}
 
 /* SQL display */
 .feedback {
@@ -230,7 +235,7 @@ pre {
 }
 .footer {
     background-color: #c93f3f;
-    color: #ffffff;
+    color: #ffe6e6;
     text-align: center;
     padding: 15px 0; 
     font-size: 15px;  
