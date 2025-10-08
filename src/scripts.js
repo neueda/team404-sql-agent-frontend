@@ -4,6 +4,7 @@ function give_feedback(agentResponse) {
   //console.log(userInput)
   const feedback_text = document.getElementById("feedback_text");
   if (userInput) {
+    feedback_element.style.display = "block"; 
     send_request(userInput);
     const table = document.getElementById("table");
     table.setAttribute("border", "3")
@@ -116,4 +117,8 @@ function clearBtn() {
   //Remove the table border again when "Clear" is clicked
   const table = document.getElementById("table");
   table.removeAttribute("border");
+
+  const feedback_element = document.getElementById("feedback_element");
+  feedback_element.style.display = "none"; 
+
 }
