@@ -226,6 +226,61 @@ pre {
     color: #000000;
 }
 
+/* error display section */
+.error {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
+.error-link {
+    order: 2;
+}
+.error-btn {
+    width: 200px;
+    height: 80px;
+    background-color: #c93f3f;
+    font-size: 30px;
+    border-radius: 8px;
+    border-color: #c93f3f;
+    color: #ffe6e6;
+}
+.error-btn:hover {
+    background-color: #a30f0f;
+}
+.error-image {
+    width: 40em;
+    order: 1;
+}
+/* style for laptop (screen width 768px and below) */
+@media (max-width: 1366px) {
+    .error {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .error-link {
+        order: 2;
+    }
+    .error-btn {
+        width: 200px;
+        height: 80px;
+        background-color: #c93f3f;
+        font-size: 30px;
+        border-radius: 8px;
+        border-color: #c93f3f;
+        color: #ffe6e6;
+    }
+    .error-btn:hover {
+        background-color: #a30f0f;
+    }
+    .error-image {
+        width: 25em;
+        order: 1;
+    }
+}
+
 /* footer */
 .footer-section {
     display: flex;
