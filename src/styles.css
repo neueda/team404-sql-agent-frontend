@@ -158,28 +158,6 @@ table {
 .istn_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    background-color: #ffd597;
-    min-width: 800px;
-    max-width: 500px;
-    height: fit-content;
-    border-radius: 8px;
-    margin: 0 auto;
-    margin-bottom: 100px;
-}
-.rules {
-    text-align: left;
-}
-.p {
-    margin: 5px;
-}
-
-/* container for instructions */
-.rule_container {
-    display: flex;
-    flex-direction: column;
     justify-content: left;
     align-items: left;
     padding: 30px;
@@ -195,9 +173,51 @@ table {
     text-align: left;
     background-color: #fae4c3;
     border-radius: 8px;
+    padding: 20px;
 }
 .p {
     margin: 5px;
+}
+ol {
+    padding: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+/* container for rules */
+.rule_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 30px;
+    background-color: #ffd597;
+    min-width: 800px;
+    max-width: 500px;
+    height: fit-content;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.rules {
+    text-align: left;
+    background-color: #fae4c3;
+    border-radius: 8px;
+    padding: 20px;
+}
+.p {
+    margin: 5px;
+}
+pre {
+    background-color:#ffd597; 
+    padding:10px; 
+    border-radius:8px; 
+    font-weight:bold;
+}
+.r-table {
+    background-color: #ffd597;
+    border-radius: 4px;
+    color: #000000;
 }
 
 /* footer */
