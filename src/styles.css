@@ -167,6 +167,7 @@ thead {
     justify-content: left;
     align-items: left;
     padding: 30px;
+    padding-bottom: 70px;
     background-color: #ffd597;
     min-width: 800px;
     max-width: 500px;
