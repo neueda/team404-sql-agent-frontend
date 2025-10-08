@@ -49,7 +49,11 @@ async function send_request(user_input) {
       document.getElementById("results").textContent="Invalid request"
     }
   } catch (error) {
+    //handle errors without breaking the UI
     console.error(error.message);
+    document.getElementById("Hresults").innerHTML = "";
+    document.getElementById("results").textContent="Oops! An error occurred";
+    document.getElementById("feedback_element").style.display = "none";
   }
 }
 
