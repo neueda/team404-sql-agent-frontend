@@ -300,3 +300,18 @@ pre {
     width: 100%;
     height: auto; 
 }
+/* Asus zenbook */
+@media(min-width:853px) {
+    .main_container{
+        display: inline;
+    }
+    #user_input{
+        min-width: 500px;
+    }
+    .istn_container{
+        min-width: 750px;
+    }
+    .rule_container{
+        min-width: 750px;
+    }
+}
