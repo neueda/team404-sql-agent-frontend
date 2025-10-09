@@ -300,8 +300,9 @@ pre {
     width: 100%;
     height: auto; 
 }
+
 /* Asus zenbook */
-@media(min-width:853px) {
+@media(max-width:853px) {
     .main_container {
         display: flex;
         align-content: center;
