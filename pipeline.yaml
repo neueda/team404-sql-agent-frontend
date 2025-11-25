@@ -1,0 +1,11 @@
+onReview:
+  publish: false
+  deploy: false
+  automatedTests: false
+  deploymentTarget:
+    repository: ""
+    branch: ""
+    file: []
+sonarqube:
+  skipScan: false
+  allowFailure: false
